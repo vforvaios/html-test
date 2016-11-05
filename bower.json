@@ -1,0 +1,24 @@
+{
+  "name": "vendor",
+  "dependencies": {
+    "jquery": "latest",
+    "normalize.css": "latest",
+    "font-awesome": "latest"
+  },
+  "install" : {
+    "base": "source/vendor",
+    "path": {
+      "/(woff.*|eot|ttf|otf|svg)$/": "{name}/fonts",
+      "/(png|gif)/": "{name}/images",
+      "/[c|sc|le]ss$/": "{name}/css",
+      "js": "{name}/js"
+    },
+    "sources" : {
+      "font-awesome": [
+        "bower_components/font-awesome/fonts/*",
+        "bower_components/font-awesome/css/font-awesome.css"
+      ]
+    }
+  },
+  "private": true
+}
