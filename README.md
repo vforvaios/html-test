@@ -20,7 +20,7 @@ HTML test template using sass and coffee-script as preprocessing languages. Bour
 
 Open a terminal and run:
 
-	$ git clone git@github.com:jonian/html-test.git
+	$ git clone https://github.com/jonian/html-test.git
 
 ### Install Ruby GEMS with Bundler
 
@@ -48,3 +48,18 @@ Navigate to your project directory and run:
 	$ bundle exec guard start
 
 All project assets will be compiled into the `build` directory.
+
+### Design Info
+
+All images and logos are located in the `images` directory.
+
+#### Fonts used
+
+- **Headings and buttons**: Roboto Condensed
+- **Body**: Open Sans
+- **Icons**: [FontAwesome](http://fontawesome.io/) icon font.
+
+### Instructions
+
+- Top navigation should become sticky ( with the gray info bar below it ) after scrolling past header. *The nav bar designed right below header shows the position and styling of the sticky bar.*
+- In mobile mode the top bar is sticky from the beginning, without the turquoise bar though.
