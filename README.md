@@ -52,6 +52,7 @@ All project assets will be compiled into the `build` directory.
 ### Design Info
 
 All images and logos are located in the `images` directory.
+All design mockups are located in the `design` directory.
 
 #### Fonts used
 
@@ -61,5 +62,7 @@ All images and logos are located in the `images` directory.
 
 ### Instructions
 
+- Design should be implemented following the mobile-first approach.
+- One breakpoint will be used. 1024px and up for mobile version. 1024px and down for desktop version.
 - Top navigation should become sticky ( with the gray info bar below it ) after scrolling past header. *The nav bar designed right below header shows the position and styling of the sticky bar.*
 - In mobile mode the top bar is sticky from the beginning, without the turquoise bar though.
