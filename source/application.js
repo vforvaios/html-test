@@ -2,4 +2,5 @@
 // listed below.
 //
 //= require vendor/jquery/js/jquery
+//= require vendor/slick.min
 //= require coffee/application

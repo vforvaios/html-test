@@ -4,5 +4,6 @@
 
 // This is your base stylesheet file
 
+@import "website/slick";
 @import "website/mobile";
 @media (min-width: 1025px) { @import "website/desktop" };
