@@ -30,6 +30,7 @@ body {
 .row {
 	display: block;
 	width: 100%;
+	float: left;
 }
 
 .wrapper {
@@ -57,15 +58,18 @@ header {
 
 	.cell:last-child { text-align: right; }
 
-	.trigger-nav {
-		color: $color-1;
-		font-size: 30px;
-		cursor: pointer;
-	}
 
 	.logo img {
 		vertical-align: middle;
+
+		&.for-desktop { display: none; }
 	}
+}
+
+.trigger-nav {
+	color: $color-1;
+	font-size: 30px;
+	cursor: pointer;
 }
 
 nav {
@@ -86,6 +90,8 @@ nav {
 	background: #ececec;
 	padding: 10px 0;
 	background: #ececec;
+
+	&.for-desktop { display: none; }
 
 	i {
 		color: #b3b3b3;
@@ -417,9 +423,37 @@ nav {
 footer {
 	.top-row {
 		background: #e6e6e6;
-		padding: 20px;
+		padding: 40px 20px;
 		box-sizing: border-box;
 		float: left;
+	}
+
+	.middle-row {
+		background: $color-1;
+		padding: 10px 20px;
+    box-sizing: border-box;
+
+		.trigger-nav { color: #fff; }
+
+		.cell:last-child {
+			text-align: right;
+			ul { display: none; }
+		}
+	}
+
+	.bottom-row {
+		font-size: 14px;
+		color: $color-2;
+		padding: 20px;
+		box-sizing: border-box;
+
+		.cells,
+		.cell {
+			display: block;
+			float: left;
+			width: 100%;
+			text-align: left;
+		}
 	}
 
 	.block-instagram {
@@ -458,6 +492,104 @@ footer {
 		float: left;
 		width: 100%;
 	}
+
+	.block {
+		display: block;
+		float: left;
+		width: 100%;
+		padding: 20px;
+		box-sizing: border-box;
+		background: transparent;
+		text-align: center;
+
+		a {
+			color: #b98abb;
+			display: inline-block;
+			text-align: center;
+			font-size: 14px;
+			font-weight: 300;
+
+			&:hover,
+			&:focus { text-decoration: underline; }
+		}
+
+		&.with-decoration {
+			background: #fff;
+			position: relative;
+			overflow: hidden;
+
+			&:before {
+				font-family: 'FontAwesome';
+				content: '\f10e';
+				position: absolute;
+				color: #b98abb;
+				right: 15px;
+		    z-index: 2;
+		    top: 10px;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				transform: rotate(45deg);
+				top: -50px;
+				right: -50px;
+				background: #f2f2f2;
+			}
+
+			.block-title { color: #b98abb; }
+
+			.comment { margin-bottom: 20px; }
+
+			.author {
+				font-size: 12px;
+				color: #b98abb;
+				text-align: right;
+			}
+		}
+
+	}
+
+	.block-title {
+		font-size: 20px;
+		color: $color-2;
+		font-weight: 300;
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	.block-description {
+		font-size: 14px;
+		color: $color-2;
+		font-weight: 300;
+		text-align: left;
+		margin-bottom: 30px;
+	}
+}
+
+.language-section {
+	position: relative;
+
+	span {
+		display: inline-block;
+		position: relative;
+		color: #fff;
+		font-size: 14px;
+		padding-right: 20px;
+
+		&:after {
+			font-family: 'FontAwesome';
+			content: '\f078';
+			position: absolute;
+			top: 50%;
+			right: 0;
+			color: #fff;
+			font-size: 14px;
+			margin-top: -10px;
+		}
+	}
 }
 
 .instagram-list {
@@ -472,4 +604,6 @@ footer {
 
 		&:nth-child(3n+1) { clear: left; }
 	}
+
+
 }
