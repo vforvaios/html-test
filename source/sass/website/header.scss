@@ -1,0 +1,28 @@
+/* HEADER ----------------------------------- */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 10;
+
+	.top-row {
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.social-icons {
+		padding: 10px 20px;
+		box-sizing: border-box;
+	}
+
+	.cell:last-child { text-align: right; }
+
+
+	.logo img {
+		vertical-align: middle;
+
+		&.for-desktop { display: none; }
+	}
+}

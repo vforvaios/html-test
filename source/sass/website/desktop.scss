@@ -12,6 +12,25 @@ header {
 	background: transparent;
 	position: absolute;
 
+	&.stuck {
+		position: fixed;
+		top: 0;
+		left: 50%;
+		width: 1024px;
+		z-index: 10;
+		background: #fff;
+		margin-left: -512px;
+
+		.logo img {
+			display: block;
+
+			&.for-desktop { display: none; }
+		}
+
+		nav li a { color: #ababab; }
+		.fa-shopping-cart { border-color: #ababab; }
+	}
+
 	.logo img {
 		display: none;
 
@@ -36,11 +55,21 @@ header {
 .social-icons {
 	display: none;
 
+
 	&.for-desktop {
 		display: table;
 		table-layout: fixed;
 		margin-bottom: 30px;
 		padding: 5px 20px;
+
+		&.stuck {
+			position: fixed;
+			top: 94px;
+			left: 50%;
+			width: 1024px;
+			z-index: 10;
+			margin-left: -512px;
+		}
 
 		.cell {
 			text-align: center;
@@ -53,9 +82,19 @@ header {
 
 .hero-banner { margin-bottom: 0; }
 
+.close-menu { display: none; }
+
 nav {
 	position: static;
 	margin-left: 0;
+	opacity: 1;
+	background: transparent;
+	height: auto;
+
+	ul {
+		position: static;
+		transform: none;
+	}
 
 	li {
 		display: inline-block;
@@ -66,7 +105,8 @@ nav {
 
 		a {
 			color: #fff;
-			font-size: 14px;
+			font-size: 16px;
+			margin-bottom: 0;
 
 			&:hover,
 			&:focus {

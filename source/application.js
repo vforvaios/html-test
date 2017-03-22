@@ -3,4 +3,7 @@
 //
 //= require vendor/jquery/js/jquery
 //= require vendor/slick.min
+//= require vendor/lodash.min
+//= require vendor/jquery.waypoints.min
+//= require vendor/sticky.min
 //= require coffee/application
